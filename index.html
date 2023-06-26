@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheesecake</title>
+    <style>
+      body {
+        background: linear-gradient(
+          to top,
+          #d5dee7 0%,
+          #ffafbd 0%,
+          #c9ffbf 100%
+        );
+      }
+
+      h1 {
+        font-family: calibri;
+        color: #c1426f;
+        text-align: center;
+        font-size: xx-large;
+        background: white;
+        margin: 10px 650px;
+        border-radius: 50%;
+        padding: 15px;
+        box-shadow: 0px 0px 15px grey;
+
+      }
+
+      .polaroid {
+        display: block;
+        margin: 17px auto 0 auto;
+        padding: 15px 15px 5px 15px;
+        background-clip: padding-box;
+        background: white;
+        width: 250px;
+        border: 1px grey;
+        box-shadow: 0px 0px 15px grey;
+      }
+
+      h2 {
+        margin-top: 10px;
+        font-family: segoe script;
+        color: #1434a4;
+        text-align: center;
+        font-size: medium;
+      }
+
+      img {
+        padding-bottom: 0px;
+        width: 250px;
+      }
+
+      p {
+        color: #1434a4;
+        font-family: calibri;
+        background: white;
+        margin: 20px 200px 20px 200px;
+        padding: 25px;
+        border-radius: 15px;
+        text-align: center;
+      }
+
+      hr {
+        width: 280px;
+        height: 0;
+        border: 0;
+        border-top: 3px solid #FFB0BD;
+      }
+
+      a {
+        text-decoration: none;
+        color: #c1426f;
+      }
+
+      button {
+        color: #1434a4;
+        background-color:#c9ffbf;
+        border: none;
+        font-family: calibri;
+        font-size: large;
+        font-weight: 700;
+        line-height: 40px;
+        width: 1000px;
+        border: 4px solid #c1426f;
+        border-radius: 15px;
+      }
+
+      button:hover {
+        background:#FFB0BD;
+        color: white;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+      }
+
+      .chocolate {
+        color: #7E432A;
+      }
+
+      .strawberry {
+        color: #DB0027;
+      }
+
+      .lemon {
+        color: #F6BC00;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Cheesecake</h1>
+    <hr />
+    <div class="polaroid">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/822/original/download_%288%29.jpg?1676495658"
+      />
+      <h2>- the greatest dessert of all time?</h2>
+    </div>
+    <p>
+      <strong>No-bake cheesecakes</strong> are a delicious
+      <em>and</em> easy-to-make dessert that require no oven or baking skills. These desserts are perfect for those who want to satisfy their sweet tooth
+      without putting in a lot of effort. One of the best things about no-bake cheesecakes is that they are incredibly versatile, and you can customise
+      them with different flavours and toppings to suit your preferences. They're also great for hot summer days when you don't want to turn on the oven.
+      <br />
+      <br />
+      No-bake cheesecakes usually consist of a buttery biscuit base, a creamy cheesecake filling, and toppings such as fruit, whipped cream, or
+      chocolate. You can use a variety of different ingredients to make the filling, such as cream cheese, sweetened condensed milk, and whipped
+      cream. Some popular flavors for no-bake cheesecakes include <span class="chocolate">chocolate</span>, <span class="strawberry">strawberry</span>, and 
+      <span class="lemon">lemon</span>. Whether you're serving them at a party or enjoying them at home, no-bake cheesecakes are a tasty and satisfying dessert that
+      are sure to please.
+      <br />
+      <br />
+      For further cheesecake goodness, please click
+      <a href="https://www.bbcgoodfood.com/recipes/strawberry-cheesecake-4-easy-steps">
+      here<a/>.
+    </p>
+    <p>
+      <button>Click here for cheesecake tips!</button>
+    </p>  
+  <script>
+  let contactButton = document.querySelector("button");
+  contactButton.addEventListener("click", tips);
+
+  function tips() {
+    let chocolate = prompt("Do you like chocolate cheesecake?");
+    if (chocolate === "Yes" || chocolate === "yes" || chocolate === "yes!" || chocolate === "Yes!") {
+      alert("You can use oreos, chocolate bourbons or other types of filled chocolate biscuits for the base.");
+    } else {
+      alert("That's a shame 😢");
+    }
+
+    let strawberry = prompt("Do you like strawberry cheesecake?");
+    if (strawberry === "Yes" || strawberry === "yes" || strawberry === "yes!" || strawberry === "Yes!") {
+      alert("You can use custard creams or viennese biscuits for the base.");
+    } else {
+      alert("That's a shame 😢");
+    }
+  }
+</script>
+  </body>
+</html>
